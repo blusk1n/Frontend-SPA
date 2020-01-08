@@ -1,11 +1,11 @@
 import React from 'react'
 
 const footer = () => (
-    <footer>
-        <h3>CopyRight BY Bubbles-Team</h3>
+    <footer className="navbar fixed-bottom">
+        <small>CopyRight BY Bubbles-Team</small>
 
         <style jsx>{`
-        footer h3{
+        footer small{
             text-align:center;
             width:100%;
             margin:0 auto;
@@ -16,8 +16,6 @@ const footer = () => (
         }
         footer{
             width:100%;
-            positon:absolute;
-            bottom:0;
             height:35px;
             background-color:black;
 

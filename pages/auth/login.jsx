@@ -3,6 +3,7 @@ import Nav from '../../components/nav';
 import  NotAuth from "../../layouts/notAuth"
 import {Container, Row, Col, Form,FormGroup, Label, Input,Button,} from 'reactstrap';
 import "./login.css"
+import Link from 'next/link'
 
 
 class Login extends React.Component {
@@ -37,11 +38,15 @@ class Login extends React.Component {
                             placeholder="********"
                         />
                         </FormGroup>
-                    <Button>Submit</Button>
+                    <Button  type="button" className="btn btn-outline-info   btn-block">Submit</Button>
                     
                     </Form>
-                    <a href="/auth/register" ><small>Sign-UP</small></a>    
-                    <a href="/auth/forgetPass" className="text-left text-sm-left ml-2" ><small>forget-password</small></a> 
+                    <Link href="/auth/register">
+                        <a> <small>sign Up</small></a>
+                    </Link>    
+                    <Link href="/auth/resetPass">
+                         <a className="text-left text-sm-left ml-2"><small>reset password</small></a>
+                     </Link> 
                         </Col>
                     </Row>
                 </Container>
