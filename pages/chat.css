@@ -1,0 +1,56 @@
+.container{
+    border: 1px solid black;
+    height: 800px;
+}
+#col{
+    border-right:1px solid red;
+     
+}
+.row{
+    border: 1px solid blue;
+    
+
+    
+}
+.btn{
+    height: 30px;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+img{
+    height:80px;
+    width: 80px;
+}
+.profilPic{
+    background-color: #eee;
+    padding: 5px;
+    border-radius: 18px;
+}
+.side-bar-bubble{
+    height: 600px;
+    border:1px solid green
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+
+  #chatBar{
+    position: absolute;
+    bottom: 4px;
+    width: 95%;
+  }
+  
+ 
