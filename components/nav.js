@@ -1,6 +1,5 @@
-import React from 'react'
-import Link from 'next/link'
-
+import React from "react";
+import Link from "next/link";
 
 const Nav = () => (
   <nav>
@@ -31,30 +30,24 @@ const Nav = () => (
       nav {
         text-align: center;
         justify-content: center;
-        background-color:black;
-        color:orangered
-
+        background-color: black;
+        color: orangered;
       }
       ul {
         display: flex;
         justify-content: flex-end;
-
       }
       li {
         display: flex;
-        margin-right:5em;
-        
-        
+        margin-right: 5em;
       }
       a {
         text-decoration: none;
         font-size: 20px;
-        color:orangered
-
-
+        color: orangered;
       }
     `}</style>
   </nav>
-)
+);
 
-export default Nav
+export default Nav;
