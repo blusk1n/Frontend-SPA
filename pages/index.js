@@ -22,6 +22,9 @@ const Home = () => (
         </Link>
         to create your own Bubbles
       </p>
+      <Link href="bubbleCard">
+        <code style={{ cursor: "pointer" }}>bc</code>
+      </Link>
     </div>
     <Footer />
     <style jsx>{`
