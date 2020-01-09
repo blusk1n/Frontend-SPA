@@ -1,16 +1,18 @@
 import React from 'react'
 import Head from 'next/head'
 import Nav from '../components/nav'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from "../components/footer"
+import Link from 'next/link'
+
+
+
+
 
 const Home = () => (
   <div>
-    <Head>
-      <title>Home</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
-
     <Nav />
-
+    
     <div className="hero">
       <h1 className="title">Welcome to Next.js!</h1>
       <p className="description">
@@ -35,7 +37,7 @@ const Home = () => (
         </a>
       </div>
     </div>
-
+    <Footer/>
     <style jsx>{`
       .hero {
         width: 100%;
