@@ -15,7 +15,7 @@ class Login extends React.Component {
     return (
         <div>
             <NotAuth >
-                 <Container  >
+                 <Container  style={{background:"none"}}>
                     <Row className="justify-content-md-center login">
                         <Col md="4" className="App my-auto " >
                         <h2>Sign In</h2>

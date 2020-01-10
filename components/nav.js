@@ -20,6 +20,11 @@ const Nav = () => (
           <a>register</a>
         </Link>
       </li>
+      <li>
+        <Link href="./chat">
+          <a>chatroom</a>
+        </Link>
+      </li>
     </ul>
 
     <style jsx>{`
