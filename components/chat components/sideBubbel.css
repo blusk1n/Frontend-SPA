@@ -5,8 +5,4 @@
     border-bottom: 2px solid #eee;
 
 }
-.bubble:hover{
-    transform: translateY(-5px);
-    transition: 0.1s;
-}
 
