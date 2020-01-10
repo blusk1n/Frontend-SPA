@@ -9,7 +9,7 @@ const Home = () => (
     <Head>
       <title>BUBBLES</title>
     </Head>
-
+  
     <div className="hero">
       <h1 className="title">Welcome to BUBBLES</h1>
       <p className="description">
@@ -27,7 +27,8 @@ const Home = () => (
       </Link>
     </div>
     <Footer />
-    <style jsx>{`
+
+  <style jsx>{`
       .hero {
         width: 100%;
         color: #333;
@@ -43,8 +44,8 @@ const Home = () => (
       .description {
         text-align: center;
       }
-    `}</style>
-  </div>
+    `}
+  </style>
 );
 
 export default Home;
