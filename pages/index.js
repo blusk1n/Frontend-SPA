@@ -8,6 +8,8 @@ import{Container,Col,Row ,Button}  from 'reactstrap'
 import "./chat.css"
 import Bubble from "../components/chat components/sideBubbel"
 import UserInfo from "../components/chat components/userInfo"
+import Msg from "../components/msg"
+
 class Chat extends React.Component{
   constructor(props){
     super(props)
@@ -38,8 +40,10 @@ class Chat extends React.Component{
        <Row className="row">
          {/* this one is for the first one where you have the bubbels and user name */}
           <Col className="col" sm="4" id="col">
+            
             <UserInfo/>
-            <Col className="search">
+
+            <Col className="search mt-2">
             <input class="form-control input-lg mt-2" id="inputlg" type="text" placeholder="search.... "/>
             <Button variant="info"className="btn ml-2 mt-2 btn-lm" >search</Button>
             </Col>
@@ -58,8 +62,8 @@ class Chat extends React.Component{
           <Col className="col" sm="8">
             <Bubble name="test bubble"/>       
              <Col className="side-bar-bubble mt-5 overflow-auto">
-              {this.state.msgArr.map(elm=><h5 style={{position:"relative",textAlign:"right"}}>{elm}</h5>)}
-              {this.state.myArr.map(elm=><h5 style={{position:"relative",textAlign:"left"}}>{elm}</h5>)}
+              {this.state.msgArr.map(elm=><Msg msg={elm} name={elm}/>)}
+              {this.state.myArr.map(elm=><div style={{display:"flex",alignItems:"flex-end",flexDirection:"column"}}><Msg msg={elm}/></div>)}
              
              </Col>
             {/* for the chat  */}

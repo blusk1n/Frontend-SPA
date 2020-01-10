@@ -1,15 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #00C6FF;
+}
 .container{
-    border: 1px solid black;
     height: 800px;
+    padding: 10px;
+    background:none
+    
 }
 #col{
-    border-right:1px solid red;
-     
+    border-right:1px solid  black;
+    overflow-y: none;
+
+    
 }
 .row{
-    border: 1px solid blue;
-    
-
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 12px 12px 20px;
+    background-color: white;
     
 }
 .btn{
@@ -22,15 +35,17 @@
 img{
     height:80px;
     width: 80px;
+    box-shadow: 5px 3px 6px
 }
 .profilPic{
-    background-color: #eee;
-    padding: 5px;
-    border-radius: 18px;
+    padding: 20px 10px;
+    border-bottom: 2px solid black;
+    font-size: 30px;
+    
 }
 .side-bar-bubble{
     height: 600px;
-    border:1px solid green
+
 }
 
 ::-webkit-scrollbar {
@@ -43,9 +58,6 @@ img{
   }
    
   /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888; 
-  }
 
   #chatBar{
     position: absolute;

@@ -1,8 +1,12 @@
 .bubble{
     display: flex;
     align-items: center;
-    padding: 5px;
-    border-bottom: 1px solid #eee;
+    padding: 5px 15px;
+    border-bottom: 2px solid #eee;
 
+}
+.bubble:hover{
+    transform: translateY(-5px);
+    transition: 0.1s;
 }
 
