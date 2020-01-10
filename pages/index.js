@@ -40,40 +40,42 @@ const Home = () => (
     <br />
     <br />
     <Footer />
-    <style jsx>{`
-      #mainD {
-        background-image: url("https://data.whicdn.com/images/277013600/original.gif");
-        background-repeat: no-repeat;
-        width: 100%;
-        background-position: center;
-        background-size: cover;
-        height: 700px;
-      }
-      .hero {
-        width: 100%;
-        color: #333;
-      }
-      .title {
-        margin: 0;
-        width: 100%;
-        padding-top: 100px;
-        line-height: 1.15;
-        font-size: 48px;
-        color: white;
-      }
-      .title,
-      .description {
-        text-align: center;
-        color: white;
-      }
-      #aboutD {
-        text-align: center;
-        color: black;
-        margin-top: 600px;
-        margin-left: 10%;
-        margin-right: 10%;
-      }
-    `}</style>
+    <style jsx>
+      {`
+        #mainD {
+          background-image: url("https://data.whicdn.com/images/277013600/original.gif");
+          background-repeat: no-repeat;
+          width: 100%;
+          background-position: center;
+          background-size: cover;
+          height: 700px;
+        }
+        .hero {
+          width: 100%;
+          color: #333;
+        }
+        .title {
+          margin: 0;
+          width: 100%;
+          padding-top: 100px;
+          line-height: 1.15;
+          font-size: 48px;
+          color: white;
+        }
+        .title,
+        .description {
+          text-align: center;
+          color: white;
+        }
+        #aboutD {
+          text-align: center;
+          color: black;
+          margin-top: 600px;
+          margin-left: 10%;
+          margin-right: 10%;
+        }
+      `}
+    </style>
   </div>
 );
 

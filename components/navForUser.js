@@ -1,27 +1,24 @@
 import React from "react";
 import Link from "next/link";
 
-const Nav = () => (
+const NavUser = () => (
   <nav>
     <ul>
       <li>
-        <Link href="/">
+        <Link href="../bubbleCard">
           <a>Home</a>
         </Link>
       </li>
-      <li>
-        <Link href="auth/login">
-          <a>Login</a>
-        </Link>
-      </li>
-      <li>
-        <Link href="auth/register">
-          <a>register</a>
-        </Link>
-      </li>
+
       <li>
         <Link href="./chat">
-          <a>chatroom</a>
+          <a>notifications</a>
+        </Link>
+      </li>
+
+      <li>
+        <Link href="./profile">
+          <a>profile</a>
         </Link>
       </li>
     </ul>
@@ -55,4 +52,4 @@ const Nav = () => (
   </nav>
 );
 
-export default Nav;
+export default NavUser;

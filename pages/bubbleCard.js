@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Row, Col, Card, Container, Label } from "react-bootstrap";
-import Nav from "../components/nav";
+import Nav from "../components/navForUser";
 import Footer from "../components/footer";
 import Data from "../dummyData.js";
 import Axios from "axios";
@@ -36,7 +36,7 @@ const BubbleCard = () => (
                   >
                     {elem.user.bubbles.map((bubble, i) => {
                       return (
-                        <Link href="" key={i}>
+                        <Link href="/chat" key={i}>
                           <Card
                             className="bubbleCard"
                             style={{
