@@ -5,30 +5,30 @@ import Footer from "../components/footer";
 import Link from "next/link";
 
 const Home = () => (
-  <div>
-    <Head>
-      <title>BUBBLES</title>
-    </Head>
-  
-    <div className="hero">
-      <h1 className="title">Welcome to BUBBLES</h1>
-      <p className="description">
-        <Link href="auth/login">
-          <code style={{ cursor: "pointer" }}>login</code>
-        </Link>
-        or
-        <Link href="auth/register">
-          <code style={{ cursor: "pointer" }}>signUp</code>
-        </Link>
-        to create your own Bubbles
-      </p>
-      <Link href="bubbleCard">
-        <code style={{ cursor: "pointer" }}>bc</code>
-      </Link>
-    </div>
-    <Footer />
+    <div>
+        <Head>
+            <title>BUBBLES</title>
+        </Head>
 
-  <style jsx>{`
+        <div className="hero">
+            <h1 className="title">Welcome to BUBBLES</h1>
+            <p className="description">
+                <Link href="auth/login">
+                    <code style={{cursor: "pointer"}}>login</code>
+                </Link>
+                or
+                <Link href="auth/register">
+                    <code style={{cursor: "pointer"}}>signUp</code>
+                </Link>
+                to create your own Bubbles
+            </p>
+            <Link href="bubbleCard">
+                <code style={{cursor: "pointer"}}>bc</code>
+            </Link>
+        </div>
+        <Footer/>
+
+        <style jsx>{`
       .hero {
         width: 100%;
         color: #333;
@@ -45,7 +45,8 @@ const Home = () => (
         text-align: center;
       }
     `}
-  </style>
+        </style>
+    </div>
 );
 
 export default Home;
