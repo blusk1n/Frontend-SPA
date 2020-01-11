@@ -3,13 +3,14 @@ import Head from "next/head";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "../components/footer";
 import Link from "next/link";
+import Auth from "../layouts/Auth"
 
 const Home = () => (
+  <Auth>
   <div>
     <Head>
       <title>BUBBLES</title>
     </Head>
-  
     <div className="hero">
       <h1 className="title">Welcome to BUBBLES</h1>
       <p className="description">
@@ -22,13 +23,12 @@ const Home = () => (
         </Link>
         to create your own Bubbles
       </p>
-      <Link href="bubbleCard">
+      {/* <Link href="bubbleCard">
         <code style={{ cursor: "pointer" }}>bc</code>
-      </Link>
+      </Link> */}
     </div>
     <Footer />
-
-  <style jsx>{`
+    <style jsx>{`
       .hero {
         width: 100%;
         color: #333;
@@ -44,8 +44,9 @@ const Home = () => (
       .description {
         text-align: center;
       }
-    `}
-  </style>
+    `}</style>
+  </div>
+  </Auth>
 );
 
 export default Home;

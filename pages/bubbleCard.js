@@ -20,7 +20,7 @@ const BubbleCard = () => (
     >
       bubble card page
     </h2>
-    <Container>
+    <Container > 
       <Row>
         {Data.map((elem, i) => {
           if (elem.user.id === "1")
