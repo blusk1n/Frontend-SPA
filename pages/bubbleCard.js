@@ -5,7 +5,7 @@ import { Row, Col, Card, Container } from "react-bootstrap";
 import Nav from "../components/nav";
 import Footer from "../components/footer";
 import Data from "../dummyData.js";
-// import Axios from "axios";
+import Axios from "axios";
 
 const BubbleCard = () => (
   <div>

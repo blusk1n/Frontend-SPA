@@ -4,13 +4,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "../components/footer";
 import Link from "next/link";
 import Auth from "../layouts/Auth"
+
 const Home = () => (
   <Auth>
   <div>
     <Head>
       <title>BUBBLES</title>
     </Head>
-
     <div className="hero">
       <h1 className="title">Welcome to BUBBLES</h1>
       <p className="description">
