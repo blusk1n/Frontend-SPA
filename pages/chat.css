@@ -6,7 +6,6 @@ body{
     background-color: #00C6FF;
 }
 .container{
-    height: 800px;
     padding: 10px;
     background:none
     
@@ -17,7 +16,7 @@ body{
 
     
 }
-.row{
+#charRow{
     border: 1px solid black;
     padding: 10px;
     border-radius: 12px;
@@ -44,7 +43,7 @@ img{
     
 }
 .side-bar-bubble{
-    height: 600px;
+    height: 500px;
 
 }
 
